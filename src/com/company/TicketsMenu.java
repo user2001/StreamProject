@@ -9,6 +9,7 @@ import static java.util.stream.Collectors.averagingInt;
 public class TicketsMenu {
     List<Movies> films;
 
+
     public TicketsMenu(List<Movies> films) {
         this.films = films;
     }
