@@ -21,7 +21,7 @@ public class GroupBY {
 
     public void groupByDate() {
         Set<String> map2 = users.stream()
-                .filter(it -> it.getLoginDate().isBefore(LocalDate.now().minusWeeks(1)))
+                .filter(it -> it.getLoginDate().isAfter(LocalDate.now().minusWeeks(1)))
                 .map(User::getEmail).collect(Collectors.toSet());
         System.out.println(map2);
     }
