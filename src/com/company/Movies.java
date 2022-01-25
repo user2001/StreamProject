@@ -1,9 +1,9 @@
 package com.company;
 
 public class Movies {
-    String name;
-    String genre;
-    int price;
+    private String name;
+    private String genre;
+    private int price;
 
     public Movies(String name, String genre, int price) {
         this.name = name;
